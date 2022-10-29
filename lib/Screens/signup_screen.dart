@@ -211,14 +211,14 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       ),
                     ],
                   ),
-                  Center(
-                    child: SocialButtonWidget(
-                        bgColor: Colors.white,
-                        imagePath: 'assets/Gmail.png',
-                        onPress: () async {
-                          await Services.googleSignIn(context);
-                        }),
-                  ),
+                  // Center(
+                  //   child: SocialButtonWidget(
+                  //       bgColor: Colors.white,
+                  //       imagePath: 'assets/Gmail.png',
+                  //       onPress: () async {
+                  //         await Services.googleSignIn(context);
+                  //       }),
+                  // ),
                   // Row(
                   //   mainAxisAlignment: MainAxisAlignment.center,
                   //   children: [
