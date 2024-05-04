@@ -4,14 +4,9 @@ import 'package:login_signin_form/Screens/login_screen.dart';
 import 'package:login_signin_form/Screens/signup_screen.dart';
 import 'package:login_signin_form/Widgets/button_widget.dart';
 
-class WelcomeScreen extends StatefulWidget {
+class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({Key? key}) : super(key: key);
 
-  @override
-  State<WelcomeScreen> createState() => _WelcomeScreenState();
-}
-
-class _WelcomeScreenState extends State<WelcomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

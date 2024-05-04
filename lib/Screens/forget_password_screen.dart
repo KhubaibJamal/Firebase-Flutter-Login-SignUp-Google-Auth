@@ -43,12 +43,12 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
             builder: (BuildContext context) {
               return AlertDialog(
                 backgroundColor: Theme.of(context).scaffoldBackgroundColor,
-                title: TextWidget(
+                title: const TextWidget(
                   title: "Error",
                   txtSize: 25.0,
                   txtColor: Colors.white,
                 ),
-                content: TextWidget(
+                content: const TextWidget(
                   title: "Please Enter the email",
                   txtSize: 20.0,
                   txtColor: Colors.white,
@@ -58,7 +58,7 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
                     onPressed: () {
                       Navigator.pop(context);
                     },
-                    child: TextWidget(
+                    child: const TextWidget(
                       title: "Ok",
                       txtSize: 18.0,
                       txtColor: Colors.blue,
@@ -112,10 +112,10 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
                     txtSize: 30,
                     txtColor: Theme.of(context).primaryColor,
                   ),
-                  TextWidget(
+                  const TextWidget(
                     title: "Email",
                     txtSize: 22,
-                    txtColor: const Color(0xffdddee3),
+                    txtColor: Color(0xffdddee3),
                   ),
                   InputTxtField(
                     hintText: "Your Email id",
@@ -136,10 +136,10 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
                       onTap: () {
                         Navigator.pop(context);
                       },
-                      child: TextWidget(
+                      child: const TextWidget(
                         title: "Back to login",
                         txtSize: 18,
-                        txtColor: const Color(0xff999a9e),
+                        txtColor: Color(0xff999a9e),
                       ),
                     ),
                   ),

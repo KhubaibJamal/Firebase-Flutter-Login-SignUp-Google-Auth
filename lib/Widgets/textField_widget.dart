@@ -7,8 +7,8 @@ class InputTxtField extends StatelessWidget {
   final String? Function(String?)? validator;
   final bool obscureText;
 
-  InputTxtField(
-      {required this.hintText,
+  const InputTxtField(
+      {super.key, required this.hintText,
       required this.controller,
       required this.validator,
       required this.obscureText});

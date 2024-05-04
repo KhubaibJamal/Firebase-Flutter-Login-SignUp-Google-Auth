@@ -2,10 +2,8 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:login_signin_form/Pages/home_page.dart';
-import 'package:login_signin_form/Services/google_services.dart';
 import 'package:login_signin_form/Utilities/validator.dart';
 import '../Widgets/button_widget.dart';
-import '../Widgets/social_button_widget.dart';
 import '../Widgets/textField_widget.dart';
 import '../Widgets/text_widget.dart';
 
@@ -62,12 +60,12 @@ class _SignUpScreenState extends State<SignUpScreen> {
             builder: (BuildContext context) {
               return AlertDialog(
                 backgroundColor: Theme.of(context).scaffoldBackgroundColor,
-                title: TextWidget(
+                title: const TextWidget(
                   title: "Error",
                   txtSize: 25.0,
                   txtColor: Colors.white,
                 ),
-                content: TextWidget(
+                content: const TextWidget(
                   title: "Please fill the fields",
                   txtSize: 20.0,
                   txtColor: Colors.white,
@@ -77,7 +75,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     onPressed: () {
                       Navigator.pop(context);
                     },
-                    child: TextWidget(
+                    child: const TextWidget(
                       title: "Ok",
                       txtSize: 18.0,
                       txtColor: Colors.blue,
@@ -123,7 +121,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
               height: 50,
             ),
             Center(
-              child: Container(
+              child: SizedBox(
                 height: MediaQuery.of(context).size.height / 3.5,
                 child: Image.asset("assets/image.png"),
               ),
@@ -142,10 +140,10 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     txtSize: 30,
                     txtColor: Theme.of(context).primaryColor,
                   ),
-                  TextWidget(
+                  const TextWidget(
                     title: "Name",
                     txtSize: 22,
-                    txtColor: const Color(0xffdddee3),
+                    txtColor: Color(0xffdddee3),
                   ),
                   InputTxtField(
                     hintText: "Your Name",
@@ -153,10 +151,10 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     validator: nameValidator,
                     obscureText: false,
                   ),
-                  TextWidget(
+                  const TextWidget(
                     title: "Email",
                     txtSize: 22,
-                    txtColor: const Color(0xffdddee3),
+                    txtColor: Color(0xffdddee3),
                   ),
                   InputTxtField(
                     hintText: "Your Email id",
@@ -164,10 +162,10 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     validator: emailValidator,
                     obscureText: false,
                   ),
-                  TextWidget(
+                  const TextWidget(
                     title: "Password",
                     txtSize: 22,
-                    txtColor: const Color(0xffdddee3),
+                    txtColor: Color(0xffdddee3),
                   ),
 
                   InputTxtField(
@@ -196,10 +194,10 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           color: const Color(0xff999a9e),
                         ),
                       ),
-                      TextWidget(
+                      const TextWidget(
                         title: "Or signup with",
                         txtSize: 18,
-                        txtColor: const Color(0xff999a9e),
+                        txtColor: Color(0xff999a9e),
                       ),
                       Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 10.0),

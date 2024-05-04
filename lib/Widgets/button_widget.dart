@@ -5,7 +5,7 @@ class ButtonWidget extends StatelessWidget {
   final String btnText;
   final VoidCallback onPress;
 
-  ButtonWidget({required this.btnText, required this.onPress});
+  const ButtonWidget({super.key, required this.btnText, required this.onPress});
 
   @override
   Widget build(BuildContext context) {

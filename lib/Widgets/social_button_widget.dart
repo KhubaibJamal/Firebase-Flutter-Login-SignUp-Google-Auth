@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:login_signin_form/Widgets/text_widget.dart';
 
 class SocialButtonWidget extends StatelessWidget {
@@ -7,8 +6,8 @@ class SocialButtonWidget extends StatelessWidget {
   final String imagePath;
   final VoidCallback onPress;
 
-  SocialButtonWidget(
-      {required this.bgColor, required this.imagePath, required this.onPress});
+  const SocialButtonWidget(
+      {super.key, required this.bgColor, required this.imagePath, required this.onPress});
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
