@@ -3,6 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:login_signin_form/Pages/home_page.dart';
 import 'package:login_signin_form/Utilities/validator.dart';
+import 'package:login_signin_form/Widgets/social_button_widget.dart';
 import '../Widgets/button_widget.dart';
 import '../Widgets/textField_widget.dart';
 import '../Widgets/text_widget.dart';
@@ -210,13 +211,11 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     ],
                   ),
                   Center(
-                    child: SocialButtonWidget(
-                        bgColor: Colors.white,
-                        imagePath: 'assets/Gmail.png',
-                        onPress: () async {
-                          await Services.googleSignIn(context);
-                        }),
-                  ),
+                      child: SocialButtonWidget(
+                    bgColor: Colors.white,
+                    imagePath: 'assets/Gmail.png',
+                    onPress: () {},
+                  )),
                   // Row(
                   //   mainAxisAlignment: MainAxisAlignment.center,
                   //   children: [
