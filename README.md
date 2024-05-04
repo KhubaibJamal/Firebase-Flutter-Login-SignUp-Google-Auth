@@ -1,16 +1,25 @@
-# login_signin_form
+# Login Sign-Up form UI with Firebase
 
-A new Flutter project.
+A new Flutter project, Login Sign-up page UI with google authentication and firebase
 
-## Getting Started
+## Packages
+- [google_fonts](https://pub.dev/packages/google_fonts)
+- [firebase_core](https://pub.dev/packages/firebase_core)
+- [firebase_auth](https://pub.dev/packages/firebase_auth)
+- [cloud_firestore](https://pub.dev/packages/cloud_firestore)
+- [google_sign_in](https://pub.dev/packages/google_sign_in)
 
-This project is a starting point for a Flutter application.
+## Features
 
-A few resources to get you started if this is your first Flutter project:
+- Google authentication
+- Fotget password
+- Login
+- Sign-up
+- Firebase
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Screenshot
+![Login orSignup](https://user-images.githubusercontent.com/101318795/198843250-f25a53aa-01ee-4035-8ce3-cbca0319b00e.png)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+## Author
+[Khubaib Jamal](https://www.linkedin.com/in/khubaib-jamal/)
